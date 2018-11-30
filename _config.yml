@@ -21,15 +21,13 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: dkerrious
 github_username:  kerrd89
+google_analytics: UA-130173214-1
 
 # Build settings
 markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-
-port: 3999
-google_analytics: UA-130173214-1
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

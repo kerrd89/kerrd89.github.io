@@ -24,7 +24,7 @@ github_username:  kerrd89
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme: slate
 plugins:
   - jekyll-feed
 

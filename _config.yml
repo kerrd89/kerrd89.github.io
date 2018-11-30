@@ -29,7 +29,7 @@ plugins:
   - jekyll-feed
 
 port: 3999
-google-analytics: UA-130173214-1
+google_analytics: UA-130173214-1
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

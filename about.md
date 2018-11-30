@@ -4,15 +4,10 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+My name is David and I am a software developer living in Boulder.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+In 2016 I decided to change careers and pursue software development instead of continuing a career in finance.  After a 6-month Frontend focused program at the [Turing School](https://turing.io/), I was hired at Canvas Technology in Boulder as employee number 16.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+As with any startup, I have had the opportunity to work on a variety challenging problems.  Aside from learning new Frontend technologies, I have added Linux, Jenkins, and Elixir skills.  Additionally, I have been exposed to networking principles and virtual machines.
 
-
-[jekyll-organization]: https://github.com/jekyll
+I am passionate about using technology to improve the work and/or lives of people.

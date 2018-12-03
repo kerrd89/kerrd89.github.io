@@ -1,0 +1,21 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@import "minima";
+$logo-blue: #485e87;
+$logo-white: #ffffff;
+$logo-gold: #ffca06;
+$maroon: #4b3b47;
+
+.site-header {
+  background-color: $logo-blue;
+}
+
+.site-title, .page-link {
+  color: $logo-white !important;
+}
+
+.site-header {
+  border-top: 5px solid $logo-gold;
+}

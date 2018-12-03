@@ -78,4 +78,10 @@ Depending on your machine, you might have to configure the port in the `_config.
 
 `port: 3999`
 
+Some configuration is done in `_layouts`, some configuration is done in `_includes`.  The `_includes` directory contains reusable HTML fragments which are *included* in layouts.
+
+If you want to update your `header.html`, for example, you would:
+* copy the source file from your theme into the `_includes` directory
+* start editing
+
 In summation, my experience getting started with Jekyll was a positive one.  Github has stellar documentation for pages, themes, and Jekyll.  Jekyll's documentation is slightly more cryptic but also helpful for understanding the basic concepts of the framework.

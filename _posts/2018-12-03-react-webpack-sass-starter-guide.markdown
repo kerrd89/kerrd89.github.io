@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Setting Up a Jekyll Blog"
+title:  "React Webpack Sass Starter Guide"
 date:   2018-12-03 18:15:05 -0700
 categories: technical
 ---

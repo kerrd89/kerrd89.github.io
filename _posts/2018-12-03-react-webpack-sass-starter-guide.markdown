@@ -110,6 +110,24 @@ export default class App extends Component {
 }
 ```
 
+Now, lets make a basic `index.html` in the root of the directory as an entry point.
+
+```
+touch index.html
+
+// in index.html
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>React Webpack Sass Starter</title>
+    </head>
+    <body>
+        <div id="app"></div>
+        <script type="text/javascript" src="/bundle.js"></script>
+    </body>
+</html>
+```
+
 Add a dev script to your package JSON.
 
 ```

@@ -22,6 +22,12 @@ body {
   color: $logo-white !important;
 }
 
+@media only screen and (max-width: 600px) {
+  .page-link {
+      color: $logo-blue !important;
+  }
+}
+
 .site-header {
   border-top: 5px solid $logo-gold;
 }

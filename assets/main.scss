@@ -26,6 +26,9 @@ body {
   .page-link {
       color: $logo-blue !important;
   }
+  .post-image {
+    max-width: 300px;
+  }
 }
 
 .site-header {

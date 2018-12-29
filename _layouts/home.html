@@ -16,7 +16,9 @@ layout: default
       <li>
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {%- if post.cover  -%}
-          <img class="post-image" src="{{ post.cover | relative_url }}" ></img>
+          <a href="{{ post.url | relative_url }}">
+            <img class="post-image" src="{{ post.cover | relative_url }}" ></img>
+          </a>
         {%- endif -%}
         <h3>
           <a class="post-link" href="{{ post.url | relative_url }}">

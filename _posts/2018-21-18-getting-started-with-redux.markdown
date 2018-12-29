@@ -3,8 +3,9 @@ layout: post
 title:  "Getting Started With Redux"
 date:   2018-12-18 18:15:05 -0700
 categories: technical
+cover: "/assets/react-redux.png"
 ---
-I found [Redux](https://redux.js.org/) a bit intimidating.  There are actions, reducers, types, and you have to connect the store to your components.  Oh, and don't forget to implement middleware.  It can be difficult to debug across so many different components, especially during set-up.
+I found [Redux](https://redux.js.org/) a bit intimidating initially.  There are actions, reducers, types, and connecting the store to your components.  Oh, and don't forget to implement middleware.  It can be difficult to debug across so many different components, especially during set-up.
 
 In my opinion, Redux is overkill for most projects.  You can create a simple store through a root component's state that is far easier to manage, understand, and implement.
 

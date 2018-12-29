@@ -5,6 +5,8 @@ date:   2018-02-03 18:15:05 -0700
 categories: technical
 ---
 
+This is a tutorial to setup Bureaurcrat and Swagger API documentation with an Elixir project. The only way to make sure documentation stays up to date is to generate it automatically.  Since Bureaucrat is a popular ruby tool, I will briefly cover Elixir then dive into code.
+
 ## First, a (very) brief introduction to Elixir
 
 [Elixir](https://en.wikipedia.org/wiki/Elixir_%28programming_language%29) is an efficient, readable, and scaleable language; perfect for building an API. It is designed to be fault tolerant, using individually silo’ed processes to prevent isolated errors from causing app-wide errors. The most popular framework to build application in Elixir is Phoenix, which is designed to feel just like Rails. Elixir compiles to [erlang](https://en.wikipedia.org/wiki/Erlang_%28programming_language%29), which is an (relatively) ancient language which first appeared in 1986 per wikipedia. It took 30 years to figure out its value, but now with its fresh Elixir wrapper and Ruby-ish syntax it is has become a cornerstone of large companies everywhere.

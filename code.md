@@ -1,6 +1,6 @@
 ---
 layout: category
-title: Code
-permalink: /code/posts
+title: Technical
+permalink: /posts/technical
 filter: technical
 ---

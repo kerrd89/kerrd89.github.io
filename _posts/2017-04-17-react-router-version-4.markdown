@@ -3,6 +3,7 @@ layout: post
 title:  "React Router Version 4"
 date:   2017-04-17 18:15:05 -0700
 categories: technical
+cover: "/assets/react_router_v4.jpeg"
 ---
 As with any new technology, resources and documentation online lack for using the new version of React Router. The goal of this article is to show and explain a basic implementation of React Router v4, as well as to highlight useful features and key differences from prior versions. Whether you are familiar with React Router or new to the module altogether, my hope is that this article can help someone implement this simplified and streamlined router.
 

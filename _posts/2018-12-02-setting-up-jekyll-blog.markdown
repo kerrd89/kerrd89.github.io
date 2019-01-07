@@ -3,6 +3,7 @@ layout: post
 title:  "Setting Up a Jekyll Blog"
 date:   2018-12-02 18:15:05 -0700
 categories: technical
+cover: "/assets/jekyll_software_logo.png"
 ---
 
 I have been putting off the small chore of moving blog content from Medium.  I was curious about some of the basic, markdown based content management systems out there and decided to use Jekyll because of my familiarity with GitHub Pages.

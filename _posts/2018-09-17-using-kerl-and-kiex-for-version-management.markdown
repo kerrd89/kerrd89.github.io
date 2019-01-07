@@ -3,6 +3,7 @@ layout: post
 title:  "Using Kerl and Kiex for Erlang and Elixir Version Management"
 date:   2018-09-17 18:15:05 -0700
 categories: technical
+cover: "/assets/elixir.png"
 ---
 
 Working with Phoenix/Elixir/Erlang has its benefits, mainly performance and ease of writing production ready code, but one drawback is the headache of managing Elixir and Erlang versions. These types of issues are impediments to more widespread adoption, so I wanted to briefly document how to manage versions using kerl and kiex (Ubuntu 16.04).

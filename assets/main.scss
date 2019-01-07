@@ -26,6 +26,9 @@ body {
   .page-link {
       color: $logo-blue !important;
   }
+  .post-image {
+    max-width: 300px !important;
+  }
 }
 
 .site-header {
@@ -34,4 +37,11 @@ body {
 
 .logo {
   height: 40px;
+}
+
+.post-image {
+  display: block;
+  margin: 10px auto;
+  max-width: 500px;
+  max-height: 300px;
 }

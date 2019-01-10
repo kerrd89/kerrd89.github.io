@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Inevitability of Universal Basic Income"
-date: 2018-10-19 18:15:05 -0700
+date: 2019-01-07 18:15:05 -0700
 categories: culture
 cover: "/assets/universal_basic_income.jpg"
 ---

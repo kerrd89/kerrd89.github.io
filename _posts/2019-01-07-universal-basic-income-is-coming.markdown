@@ -8,7 +8,7 @@ cover: "/assets/universal_basic_income.jpg"
 
 Universal Basic Income is the simple idea that a government will provide a base income to its constituents. Like many, my immediate reaction to this idea was doubt mixed with resentment. As I dug deeper into the psychology behind the idea and the coming wave of automation it became clear to me that this is more of an inevitability than an idea.
 
-![Universal Basic Income]("assets/universal_basic_income.jpg")
+![Universal Basic Income]("/assets/universal_basic_income.jpg")
 
 ## Automation ##
 

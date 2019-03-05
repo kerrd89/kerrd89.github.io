@@ -6,8 +6,6 @@ categories: culture
 cover: "/assets/development.jpg"
 ---
 
-Building a Development Centric Culture
-
 Too often, companies are reacting to problems instead of proactively preventing them.
 
 This leads to production and QA thinking their job is to play a game of Where's Waldo with product bugs, finding them or things which look like them in the wild. Developers are left playing a game of whack-a-mole with those same bugs, some of which disappear before you have time to address them.

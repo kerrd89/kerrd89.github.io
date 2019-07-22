@@ -7,9 +7,9 @@ cover: "/assets/Benchee.jpeg"
 ---
 # Benchmarking Tests in Elixir
 
-![Benchee](/assets/Benchee.jpeg)
-
 Benchee is a useful tool if you find yourself in a situation where you need to test the limits of a system or need to define the behavior in specific environments. It seems primarily designed for development or debugging, but it can also be used in tests as well. The [github page](https://github.com/bencheeorg/benchee) is a useful tool for information about setup and configuration. There is more information on the [elixir school](https://elixirschool.com/en/lessons/libraries/benchee/) site as well.
+
+![Benchee](/assets/Benchee.jpeg)
 
 These docs cover how to use Benchee. This post focuses on when to use it and other notes from my experience implementing a benchmarking test suite.  Benchee is useful for testing the limitations of the system, defining time constrains or memory impacts of critical processes, or as an aid in development to write performant code.  For this article, lets set aside Benchee as a dev tool and focus on how those use cases which involve ExUnit.
 

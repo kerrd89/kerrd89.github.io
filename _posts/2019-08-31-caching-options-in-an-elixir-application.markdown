@@ -13,7 +13,7 @@ There are four different standard methods for temporarily storing and accessing 
 * Using `:ets`
 * Using `:persistent_term`
 
-## Using `Agent`
+## Using Agent
 
 **Example:**
 ```
@@ -48,7 +48,7 @@ Agent.get(:us_state_abbreviations, fn(states) -> Map.get(states, key, "N/A") end
 
 **Opinion:** In most cases, `Agent` is reimplementing given behaviors of GenServer state management.  If you find yourself sharing cached data between modules of your application, that is a sign of an architecture design problem.  `Agent` under the hood is a simple `GenServer` you don't manage, so in most situations, it is better to build your own.
 
-##Using `GenServer`
+## Using GenServer
 
 **Example:** I am not going to rewrite the hex documentation, so please look here(https://hexdocs.pm/elixir/GenServer.html) for information about `GenServers.`  The quick summary is that `GenServers` maintain state through their return values, and each function called through a `handle_cast`, `handle_call`, or `handle_info` includes the current state as an input.  A queue of internal messages is maintained, and the state updates sequentially as the servers process this call stack.
 
@@ -58,7 +58,7 @@ Agent.get(:us_state_abbreviations, fn(states) -> Map.get(states, key, "N/A") end
 
 **Opinion:** Leaning on GenServers for caching, recovering, and managing state is the best method for caching in Elixir.  While it does feel like more work is required, this work gives the additional control developers need to lock down their data flows.
 
-##Using `:ets`
+## Using `:ets`
 
 **Example:** 
 ```
@@ -100,7 +100,7 @@ end
 
 **Opinion:** For most applications, using `GenServers` is sufficient for performance.  Often, `GenServer` state contains business logic, and the `:ets` state contains distilled information for external consumption.  I think of this as the external cache whereas the `GenServer` state is primarily an internal cache.  A typical pattern is attaching these returned table references to a GenServer state.
 
-##Using :persisent_term (available in erlang 22)
+## Using :persisent_term (available in erlang 22)
 
 **Example:**
 ```
@@ -115,6 +115,6 @@ end
 
 **Opinion:** I haven't found the right use for this yet in any of my applications, but it seems useful for isolated problems at scale.
 
-##Summary
+## Summary
 
 In summary, you should probably use GenServers instead of Agent in most situations.  `Agent` is a lazier `GenServer` with more default behaviors.  For performance and flexibility, use both `:ets` and a `GenServer.`  In `GenServer` state, store a reference to `:ets` tables and use `GenServer` calls to lookup against this table because `:ets` is more performant.  If you are operating a cluster, and aren't updating these read values as frequently, consider using `:persistent_term.`  It updates across all connected nodes in a cluster (using a HashRing library like ExHashRing), so while this is powerful, it is also expensive to write data through this system.  Read of this data is faster, and more persistent, than even an erlang call like `:ets.`

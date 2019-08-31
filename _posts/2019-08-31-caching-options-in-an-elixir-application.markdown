@@ -3,8 +3,9 @@ layout: post
 title: "Caching Options in an Elixir Application"
 date: 2019-08-31 18:15:05 -0700
 categories: technical
+cover: "/assets/motherboard.jpg"
 ---
-Are you overworking your database? Are you paying for each query? Are you returning the same payloads again and again?  It might be time to think about caching and Elixir and Erlang make this easy.  I learned about the 2 Erlang options at ElixirConf 2019 and felt compelled to write this post, so a big thank you to all those who shared!
+Are you overworking your database? Are you paying for each query? Are you returning the same payloads again and again?  It might be time to think about caching and Elixir and Erlang make this easy with several in memory options.  I learned about the 2 Erlang options at ElixirConf 2019 and felt compelled to write this post, so a big thank you to all those who shared!
 
 There are four different standard methods for temporarily storing and accessing data in a simple Elixir application.  This article compares those methods, provides usage examples, and offers my personal opinion on when to use each tool.  Here are those 4 simple strategies of storing data for quicker retrieval than going to a database:
 
@@ -13,7 +14,7 @@ There are four different standard methods for temporarily storing and accessing 
 * Using `:ets`
 * Using `:persistent_term`
 
-## Using Agent
+## [Using Agent](https://hexdocs.pm/elixir/Agent.html)
 
 **Example:**
 ```
@@ -58,7 +59,7 @@ Agent.get(:us_state_abbreviations, fn(states) -> Map.get(states, key, "N/A") end
 
 **Opinion:** Leaning on GenServers for caching, recovering, and managing state is the best method for caching in Elixir.  While it does feel like more work is required, this work gives the additional control developers need to lock down their data flows.
 
-## Using :ets
+## [Using :ets](http://erlang.org/doc/man/ets.html)
 
 **Example:** 
 ```
@@ -100,7 +101,7 @@ end
 
 **Opinion:** For most applications, using `GenServers` is sufficient for performance.  Often, `GenServer` state contains business logic, and the `:ets` state contains distilled information for external consumption.  I think of this as the external cache whereas the `GenServer` state is primarily an internal cache.  A typical pattern is attaching these returned table references to a GenServer state.
 
-## Using :persisent_term (available in erlang 22)
+## [Using :persisent_term](http://erlang.org/doc/man/persistent_term.html) (available in erlang 22)
 
 **Example:**
 ```

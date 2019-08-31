@@ -74,16 +74,16 @@ Agent.get(:us_state_abbreviations, fn(states) -> Map.get(states, key, "N/A") end
 -> [{key, value}, ...]
 # how to handle these responses
 def lookup(module \\ __MODULE__, key) do
-	GenServer.call(module, {:lookup, key})
+  GenServer.call(module, {:lookup, key})
 end
 
 def handle_call({:lookup, key}, _from, state) do
-	# good practice to save the ets table ref in state
-	case :ets.lookup(state.table_ref, key) do
-		# match against key for corelated value
-		[{^key, value}] -> {:reply, {:ok, value}, data}
-		[] -> {:reply, {:error, :not_found}, data}
-	end
+  # good practice to save the ets table ref in state
+  case :ets.lookup(state.table_ref, key) do
+    # match against key for corelated value
+    [{^key, value}] -> {:reply, {:ok, value}, data}
+    [] -> {:reply, {:error, :not_found}, data}
+  end
 end
 
 # insert a record

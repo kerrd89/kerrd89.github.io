@@ -58,7 +58,7 @@ Agent.get(:us_state_abbreviations, fn(states) -> Map.get(states, key, "N/A") end
 
 **Opinion:** Leaning on GenServers for caching, recovering, and managing state is the best method for caching in Elixir.  While it does feel like more work is required, this work gives the additional control developers need to lock down their data flows.
 
-## Using `:ets`
+## Using :ets
 
 **Example:** 
 ```

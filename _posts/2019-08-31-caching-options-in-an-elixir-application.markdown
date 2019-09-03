@@ -3,7 +3,7 @@ layout: post
 title: "Caching Options in an Elixir Application"
 date: 2019-08-31 18:15:05 -0700
 categories: technical
-cover: "/assets/benchee-caching.jpg"
+cover: "/assets/benchee-caching.png"
 ---
 Are you overworking your database? Are you paying for each query? Are you returning the same payloads again and again?  It might be time to think about caching and Elixir and Erlang make this easy with several in memory options.  I learned about the 2 Erlang options at ElixirConf 2019 and felt compelled to write this post, so a big thank you to all those who shared!
 
@@ -16,7 +16,7 @@ There are four different standard methods for temporarily storing and accessing 
 
 If you wonder why this matters, here is a benchmarking test comparing the time it create a table, set 100 key value pairs, and remove 100 key value pairs.  The results show that `:ets` is significantly faster than `Agent` (and therefore `GenServer`).
 
-![Using Agent vs. Erlang ets](/assets/benchee-caching.jpeg)
+![Using Agent vs. Erlang ets](/assets/benchee-caching.png)
 
 ## [Using Agent](https://hexdocs.pm/elixir/Agent.html)
 

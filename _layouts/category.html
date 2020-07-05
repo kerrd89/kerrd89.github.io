@@ -16,16 +16,16 @@ layout: default
         {%- if post.categories contains page.filter -%}
         <li>
           {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-          {%- if post.cover  -%}
-            <a href="{{ post.url | relative_url }}">
-              <img class="post-image" src="{{ post.cover | relative_url }}" ></img>
-            </a>
-          {%- endif -%}
           <h3>
             <a class="post-link" href="{{ post.url | relative_url }}">
               {{ post.title | escape }}
             </a>
           </h3>
+          {%- if post.cover  -%}
+            <a href="{{ post.url | relative_url }}">
+              <img class="post-image" src="{{ post.cover | relative_url }}" ></img>
+            </a>
+          {%- endif -%}
           {%- if post.excerpt -%}
               {{ post.excerpt }}
           {%- endif -%}

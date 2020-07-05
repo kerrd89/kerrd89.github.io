@@ -6,7 +6,7 @@ categories: culture
 cover: "/assets/youcanbookme.png"
 ---
 
-Over the past 3 months, I have realized everything that, 5 years ago, I would have said is enough. I moved into a dream home. My dream wife and I welcomed a baby into this world, and I reached a point of stability professionally. I have so much to be grateful for, yet like everyone, I find myself swept up in the day to day hustle. I lose the perspective that I now have things that I want most for my life (family, security, and meaningful work). Maintaining this anchor and appreciation is key to long term happiness, I think.
+Over the past 3 months, I have realized everything that, 5 years ago, I would have said is "enough". I moved into a dream home. My dream wife and I welcomed a baby into this world, and I reached a point of stability professionally. I have so much to be grateful for, yet like everyone, I find myself swept up in the day to day hustle. I lose the perspective that I now have things that I want most for my life (family, security, and meaningful work). Maintaining this anchor and appreciation is key to long term happiness, I think.
 
 As I think about raising a well-grounded child, I wonder how to give them a similar anchor. People turn to religion for these lessons, but I want to create a more open experience for my child. I want to have several hours of each Sunday devoted to helping others. I love the idea of them choosing who to support, discussing those decisions with them, and giving them a sense of ownership.
 

@@ -26,10 +26,10 @@ layout: default
               <img class="post-image" src="{{ post.cover | relative_url }}" ></img>
             </a>
           {%- endif -%}
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
           {%- if post.excerpt -%}
               {{ post.excerpt }}
           {%- endif -%}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
         </li>
         {%- endif -%}
       {%- endfor -%}

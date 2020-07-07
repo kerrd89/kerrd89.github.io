@@ -16,9 +16,11 @@
 title: prying.io
 email: kerrd89@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Ramblings about code, development, and startup life.
+  Random blog posts about code, building teams, robotics, and navigating startups.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://prying.io"
+url: "https://prying.io"
+logo: "https://prying.io/assets/prying_logo.png"
+image: "https://prying.io/assets/prying_logo.png"
 twitter_username: dkerrious
 github_username:  kerrd89
 google_analytics: UA-130173214-1
@@ -29,6 +31,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

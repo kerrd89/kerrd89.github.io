@@ -3,7 +3,7 @@ layout: post
 title: "Managing a Calendar for Success"
 date: 2022-09-15 18:15:05 -0700
 categories: culture
-cover: "/assets/time_management.jpg"
+cover: "/assets/time_management.jpeg"
 ---
 
 This post is about managing a calendar with a busy life, shifting priorities, and distractions from our digital world.

@@ -3,7 +3,7 @@ layout: post
 title: "Tips for Reviewing Pull Requests"
 date: 2022-09-15 18:15:05 -0700
 categories: technical
-cover: "pull_request_vs_merge_request.jpeg"
+cover: "/assets/pull_request_vs_merge_request.jpeg"
 ---
 
 Reviewing pull requests is a vital part of the software development process. Granted, perfect pull requests do not need reviews. But we are imperfect creatures operating in a changing world.

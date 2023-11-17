@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tips for Reviewing Pull Requests"
-date: 2022-09-15 18:15:05 -0700
+date: 2023-11-17 18:15:05 -0700
 categories: technical
 cover: "/assets/pull_request_vs_merge_request.jpeg"
 ---
